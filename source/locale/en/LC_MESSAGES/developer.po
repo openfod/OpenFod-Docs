@@ -365,8 +365,8 @@ msgstr "``OpenFod-Website`` ``develop`` also checks out Docs ``develop`` for an 
 
 
 #: ../../source/developer/docs-pipeline.rst:42
-msgid "跨仓触发需要在 OpenFod-Docs 配置 secret ``WEBSITE_DISPATCH_TOKEN``（能够 ``workflow_dispatch`` ``openfod/OpenFod-Website`` 的 token）。Website 仓库本身读取 LLM 密钥，Docs 仓库不保存这些密钥。"
-msgstr "Cross-repo dispatch needs secret ``WEBSITE_DISPATCH_TOKEN`` on OpenFod-Docs (a token that can ``workflow_dispatch`` ``openfod/OpenFod-Website``). The Website repository reads LLM secrets; the Docs repository does not store them."
+msgid "跨仓触发需要在 OpenFod-Docs 配置 secret ``WEBSITE_DISPATCH_TOKEN``（能够 ``workflow_dispatch`` ``openfod/OpenFod-Website`` 的 token）。Website 构建若要检出私有的 OpenFod-Docs，还需要在 OpenFod-Website 配置 ``DOCS_CHECKOUT_TOKEN``（对该仓库 ``contents:read``）。Website 仓库本身读取 LLM 密钥，Docs 仓库不保存这些密钥。"
+msgstr "Cross-repo dispatch needs secret ``WEBSITE_DISPATCH_TOKEN`` on OpenFod-Docs (a token that can ``workflow_dispatch`` ``openfod/OpenFod-Website``). If OpenFod-Docs is private, OpenFod-Website also needs ``DOCS_CHECKOUT_TOKEN`` with ``contents:read`` on that repository. The Website repository reads LLM secrets; the Docs repository does not store them."
 
 
 

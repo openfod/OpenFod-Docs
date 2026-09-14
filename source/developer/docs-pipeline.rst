@@ -39,4 +39,4 @@ GitHub Pages 上没有常驻 Node 进程。Ask AI 会先尝试同源 ``/docs/api
 
 ``OpenFod-Website`` 的 ``develop`` 同样会检出 Docs 的 ``develop`` 做集成构建，但 **不会** 发布 Pages。官网只在 Website 的 ``main`` 更新。
 
-跨仓触发需要在 OpenFod-Docs 配置 secret ``WEBSITE_DISPATCH_TOKEN``（能够 ``workflow_dispatch`` ``openfod/OpenFod-Website`` 的 token）。Website 仓库本身读取 LLM 密钥，Docs 仓库不保存这些密钥。
+跨仓触发需要在 OpenFod-Docs 配置 secret ``WEBSITE_DISPATCH_TOKEN``（能够 ``workflow_dispatch`` ``openfod/OpenFod-Website`` 的 token）。Website 构建若要检出私有的 OpenFod-Docs，还需要在 OpenFod-Website 配置 ``DOCS_CHECKOUT_TOKEN``（对该仓库 ``contents:read``）。Website 仓库本身读取 LLM 密钥，Docs 仓库不保存这些密钥。

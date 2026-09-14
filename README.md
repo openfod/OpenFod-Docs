@@ -56,7 +56,7 @@ node server\ai-search-server.mjs
 
 推送到 `main` 后，本仓库会尝试触发 `openfod/OpenFod-Website` 的 Pages 工作流。Website 构建时检出本仓库 `main`，把 HTML 放到 `dist/docs/`。
 
-跨仓触发需要在本仓库配置 `WEBSITE_DISPATCH_TOKEN`。
+跨仓触发需要在本仓库配置 `WEBSITE_DISPATCH_TOKEN`。若 OpenFod-Docs 为私有仓库，OpenFod-Website 还需要 `DOCS_CHECKOUT_TOKEN`。
 
 ## 常用命令
 
