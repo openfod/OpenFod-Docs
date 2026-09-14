@@ -1,0 +1,27 @@
+{# psdocs · partials/toc.html — right rail "In this article" #}
+{%- if display_toc %}
+<div class="ps-toc__inner">
+  {%- if theme_show_copy_md == 'true' %}
+    <div class="ps-toc__actions">
+      {% include "partials/copy-markdown.html" %}
+    </div>
+  {%- endif %}
+  {%- if display_toc %}
+    {%- if ps_toc_intro %}
+      <div class="ps-toc__summary">
+        <div class="ps-toc__summary-title">{{ ps_toc_intro.title }}</div>
+        <div class="ps-toc__summary-meta">{{ ps_toc_intro.section_count_display }}</div>
+        {%- if ps_toc_intro.next %}
+          <div class="ps-toc__summary-divider"></div>
+          <a class="ps-toc__summary-next" href="{{ ps_toc_intro.next.link|e }}">
+            <span class="ps-toc__summary-next-label">{{ ps_ui.next }}:</span>
+            <span class="ps-toc__summary-next-title">{{ ps_toc_intro.next.title }}</span>
+          </a>
+        {%- endif %}
+      </div>
+    {%- endif %}
+    <div class="ps-toc__title">{{ ps_ui.in_this_article }}</div>
+    <div class="ps-toc__body">{{ ps_toc_html if ps_toc_html is defined else toc }}</div>
+  {%- endif %}
+</div>
+{%- endif %}

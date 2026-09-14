@@ -1,0 +1,16 @@
+{# psdocs · partials/sidebar.html — left navigation tree #}
+<div class="ps-sidebar__brand">
+  <a class="ps-sidebar__home" href="{{ pathto(master_doc) }}">
+    <svg class="octicon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+      <path fill="currentColor" d="M7.78 12.53a.75.75 0 0 1-1.06 0L2.47 8.28a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L4.81 7h7.44a.75.75 0 0 1 0 1.5H4.81l2.97 2.97a.75.75 0 0 1 0 1.06Z"/>
+    </svg>
+    <span>{{ ps_ui.home }}</span>
+  </a>
+  <div class="ps-sidebar__section">{{ theme_sidebar_title or project }}</div>
+</div>
+
+<div class="ps-sidebar__body">
+  <nav class="ps-tree">
+    {{ toctree(maxdepth=2, collapse=False, includehidden=True, titles_only=True) }}
+  </nav>
+</div>

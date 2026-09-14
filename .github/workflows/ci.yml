@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [develop, main]
+  pull_request:
+    branches: [develop, main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install and build docs
+        run: |
+          python -m pip install -r requirements.txt
+          make html
+      - uses: actions/upload-artifact@v4
+        with:
+          name: openfod-docs-html
+          path: build/html
+          if-no-files-found: error

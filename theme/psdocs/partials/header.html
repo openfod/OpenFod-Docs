@@ -1,0 +1,147 @@
+{# psdocs · partials/header.html — sticky top bar #}
+<header class="ps-header" role="banner">
+  <div class="ps-header__inner">
+    <div class="ps-header__leading">
+      <button class="ps-hamburger" type="button" aria-label="{{ ps_ui.open_sidebar }}" data-ps-drawer-toggle>
+        <svg class="ps-hamburger__icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+          <path d="M3 5h14M3 10h14M3 15h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <a class="ps-brand" href="{{ pathto(master_doc) }}">
+        <img class="ps-brand__logo"
+             src="{{ pathto('_static/openfod-logo.svg', 1) }}"
+             alt="" aria-hidden="true" width="28" height="28">
+        <span class="ps-brand__text">{{ theme_brand_name }}</span>
+      </a>
+    </div>
+
+    {%- set search_action = '' if pagename == 'search' else pathto('search') -%}
+    <form class="ps-search" action="{{ search_action }}" method="get" role="search" autocomplete="off" data-ps-search>
+      <input type="search" class="ps-search__input"
+             name="q"
+             placeholder="{{ ps_ui.search_or_ask_ai }}"
+             aria-label="{{ ps_ui.search_or_ask_ai }}"
+             autocomplete="off"
+             autocorrect="off"
+             autocapitalize="off"
+             spellcheck="false"
+             readonly />
+      <span class="ps-search__hint" aria-hidden="true">
+        <span class="ps-search__query" data-ps-search-header-query hidden></span>
+        <span class="ps-search__prompt" data-ps-search-header-prompt>
+          <span>{{ ps_ui.search_or_ask }}</span>
+          <svg class="ps-search__ai-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M5.5 1.75a.75.75 0 0 1 1.5 0V3h2V1.75a.75.75 0 0 1 1.5 0V3h.75A2.75 2.75 0 0 1 14 5.75v4.5A2.75 2.75 0 0 1 11.25 13h-6.5A2.75 2.75 0 0 1 2 10.25v-4.5A2.75 2.75 0 0 1 4.75 3h.75V1.75ZM4.75 4.5c-.69 0-1.25.56-1.25 1.25v4.5c0 .69.56 1.25 1.25 1.25h6.5c.69 0 1.25-.56 1.25-1.25v-4.5c0-.69-.56-1.25-1.25-1.25h-6.5ZM5 7.25a.75.75 0 0 1 1.5 0v.5a.75.75 0 0 1-1.5 0v-.5Zm4.5 0a.75.75 0 0 1 1.5 0v.5a.75.75 0 0 1-1.5 0v-.5ZM5.75 10a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1-.75-.75Z"/>
+          </svg>
+          <span>{{ ps_ui.ai_label }}</span>
+        </span>
+      </span>
+      <input type="hidden" name="check_keywords" value="yes">
+      <input type="hidden" name="area" value="default">
+      <button class="ps-search__submit" type="submit" aria-label="{{ ps_ui.search_docs }}">
+        <svg class="octicon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.75.75 0 1 1-1.06 1.06l-3.04-3.04ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"/>
+        </svg>
+      </button>
+    </form>
+
+    <div class="ps-search-modal" data-ps-search-modal hidden aria-hidden="true">
+      <div class="ps-search-modal__backdrop" data-ps-search-close></div>
+      <div class="ps-search-modal__dialog" role="dialog" aria-modal="true" aria-label="{{ ps_ui.search_placeholder }}">
+        <form class="ps-search-modal__form" action="{{ search_action }}" method="get" autocomplete="off" data-ps-search-modal-form>
+          <svg class="octicon ps-search-modal__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+            <path fill="currentColor" d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.75.75 0 1 1-1.06 1.06l-3.04-3.04ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"/>
+          </svg>
+          <input type="search" class="ps-search-modal__input" name="q" placeholder="{{ ps_ui.search_or_ask_ai }}" aria-label="{{ ps_ui.search_or_ask_ai }}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-ps-search-modal-input>
+          <input type="hidden" name="check_keywords" value="yes">
+          <input type="hidden" name="area" value="default">
+          <button class="ps-search-modal__close" type="button" aria-label="{{ ps_ui.close_search }}" title="{{ ps_ui.close_search }}" data-ps-search-close>
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+              <path fill="currentColor" d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.75.75 0 1 1 1.06 1.06L9.06 8l3.22 3.22a.75.75 0 1 1-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 0 1-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"/>
+            </svg>
+          </button>
+        </form>
+        <div class="ps-search-modal__empty" data-ps-search-empty hidden>
+          <div class="ps-search-modal__label ps-search-modal__label--ask-ai">
+            <svg class="ps-search-modal__label-icon" width="18" height="18" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M5.5 1.75a.75.75 0 0 1 1.5 0V3h2V1.75a.75.75 0 0 1 1.5 0V3h.75A2.75 2.75 0 0 1 14 5.75v4.5A2.75 2.75 0 0 1 11.25 13h-6.5A2.75 2.75 0 0 1 2 10.25v-4.5A2.75 2.75 0 0 1 4.75 3h.75V1.75ZM4.75 4.5c-.69 0-1.25.56-1.25 1.25v4.5c0 .69.56 1.25 1.25 1.25h6.5c.69 0 1.25-.56 1.25-1.25v-4.5c0-.69-.56-1.25-1.25-1.25h-6.5ZM5 7.25a.75.75 0 0 1 1.5 0v.5a.75.75 0 0 1-1.5 0v-.5Zm4.5 0a.75.75 0 0 1 1.5 0v.5a.75.75 0 0 1-1.5 0v-.5ZM5.75 10a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1-.75-.75Z"/>
+            </svg>
+            <span>{{ ps_ui.ask_ai }}</span>
+          </div>
+          <div class="ps-search-modal__examples">
+            {%- for example in ps_search_examples %}
+              <button class="ps-search-modal__example" type="button" data-ps-search-example data-query="{{ example|e }}">
+                <svg class="ps-search-modal__example-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path fill="currentColor" d="M1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0 1 13.25 12H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 13.543V12H2.75A1.75 1.75 0 0 1 1 10.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"/>
+                </svg>
+                <span>{{ example }}</span>
+              </button>
+            {%- endfor %}
+          </div>
+        </div>
+        <div class="ps-search-modal__choices">
+          <div class="ps-search-modal__group">
+            <div class="ps-search-modal__label">{{ ps_ui.search_docs }}</div>
+            <button class="ps-search-modal__choice" type="button" data-ps-search-docs>
+              <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+                <path fill="currentColor" d="M10.68 11.74a6 6 0 1 1 1.06-1.06l3.04 3.04a.75.75 0 1 1-1.06 1.06l-3.04-3.04ZM11.5 7a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0Z"/>
+              </svg>
+              <span data-ps-search-query>{{ ps_ui.search_placeholder }}</span>
+            </button>
+          </div>
+          <div class="ps-search-modal__group ps-search-modal__group--ai">
+            <div class="ps-search-modal__label">{{ ps_ui.ai_search }}</div>
+            <button class="ps-search-modal__choice" type="button" data-ps-search-ai data-ps-ai-query-row data-ps-language="{{ ps_current_language.code }}">
+              <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+                <path fill="currentColor" d="M5.5 1.75a.75.75 0 0 1 1.5 0V3h2V1.75a.75.75 0 0 1 1.5 0V3h.75A2.75 2.75 0 0 1 14 5.75v4.5A2.75 2.75 0 0 1 11.25 13h-6.5A2.75 2.75 0 0 1 2 10.25v-4.5A2.75 2.75 0 0 1 4.75 3h.75V1.75ZM4.75 4.5c-.69 0-1.25.56-1.25 1.25v4.5c0 .69.56 1.25 1.25 1.25h6.5c.69 0 1.25-.56 1.25-1.25v-4.5c0-.69-.56-1.25-1.25-1.25h-6.5ZM5 7.25a.75.75 0 0 1 1.5 0v.5a.75.75 0 0 1-1.5 0v-.5Zm4.5 0a.75.75 0 0 1 1.5 0v.5a.75.75 0 0 1-1.5 0v-.5ZM5.75 10a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1-.75-.75Z"/>
+              </svg>
+              <span data-ps-ai-query>{{ ps_ui.search_placeholder }}</span>
+            </button>
+            <div class="ps-search-modal__loading" data-ps-ai-loading hidden aria-live="polite" aria-label="{{ ps_ui.ai_search_loading }}">
+              <div class="ps-search-modal__spinner" aria-hidden="true"></div>
+            </div>
+            <div class="ps-search-modal__answer" data-ps-ai-answer hidden>
+              <div class="ps-search-modal__answer-text" data-ps-ai-answer-text></div>
+            </div>
+            <div class="ps-search-modal__sources" data-ps-ai-sources hidden>
+              <div class="ps-search-modal__label">{{ ps_ui.ai_search_sources }}</div>
+              <div class="ps-search-modal__sources-list" data-ps-ai-sources-list></div>
+            </div>
+          </div>
+        </div>
+        <div class="ps-search-modal__notice" data-ps-ai-notice
+             data-empty="{{ ps_ui.ai_search_empty }}"
+             data-loading="{{ ps_ui.ai_search_loading }}"
+             data-error="{{ ps_ui.ai_search_error }}"
+             data-no-sources="{{ ps_ui.ai_search_no_sources }}"></div>
+        <div class="ps-search-modal__retention" data-ps-ai-retention hidden>{{ ps_ui.ai_search_retention_notice }}</div>
+      </div>
+    </div>
+
+    {%- set lang_depth = pagename.split('/')|length -%}
+    {%- set lang_prefix -%}{%- for _ in range(lang_depth) -%}../{%- endfor -%}{%- endset -%}
+    {%- set lang_page = pagename ~ (file_suffix or '.html') -%}
+    <div class="ps-header__actions">
+    <div class="ps-lang" data-ps-lang-switcher>
+      <button class="ps-lang__button" type="button" aria-label="{{ ps_ui.language_menu }}" aria-haspopup="true" aria-expanded="false" title="{{ ps_ui.language }}" data-ps-lang-toggle>
+        <svg aria-hidden="true" focusable="false" class="octicon octicon-globe ps-lang__icon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom">
+          <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM5.78 8.75a9.64 9.64 0 0 0 1.363 4.177c.255.426.542.832.857 1.215.245-.296.551-.705.857-1.215A9.64 9.64 0 0 0 10.22 8.75Zm4.44-1.5a9.64 9.64 0 0 0-1.363-4.177c-.307-.51-.612-.919-.857-1.215a9.927 9.927 0 0 0-.857 1.215A9.64 9.64 0 0 0 5.78 7.25Zm-5.944 1.5H1.543a6.507 6.507 0 0 0 4.666 5.5c-.123-.181-.24-.365-.352-.552-.715-1.192-1.437-2.874-1.581-4.948Zm-2.733-1.5h2.733c.144-2.074.866-3.756 1.58-4.948.12-.197.237-.381.353-.552a6.507 6.507 0 0 0-4.666 5.5Zm10.181 1.5c-.144 2.074-.866 3.756-1.58 4.948-.12.197-.237.381-.353.552a6.507 6.507 0 0 0 4.666-5.5Zm2.733-1.5a6.507 6.507 0 0 0-4.666-5.5c.123.181.24.365.353.552.714 1.192 1.436 2.874 1.58 4.948Z"></path>
+        </svg>
+      </button>
+      <div class="ps-lang__menu" role="menu" aria-label="{{ ps_ui.language_menu }}" data-ps-lang-menu>
+        {%- for item in ps_languages %}
+          <a class="ps-lang__item{% if item.code == ps_current_language.code %} is-active{% endif %}"
+             href="{{ lang_prefix }}{{ item.code }}/{{ lang_page }}"
+             hreflang="{{ item.html_lang }}"
+             lang="{{ item.html_lang }}"
+             role="menuitem"
+             {% if item.code == ps_current_language.code %}aria-current="true"{% endif %}>
+            {{ item.label }}
+          </a>
+        {%- endfor %}
+      </div>
+    </div>
+    </div>
+  </div>
+</header>

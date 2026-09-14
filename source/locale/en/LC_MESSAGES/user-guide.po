@@ -1,0 +1,610 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, OpenFoD Community
+# This file is distributed under the same license as the OpenFoD package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenFoD \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-14 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/user-guide/city.rst:2
+msgid "城内内政"
+msgstr "City governance"
+
+
+
+
+#: ../../source/user-guide/city.rst:4
+msgid "《傲世三国》最被记住的不是兵种表，而是 **城中之城**。战略大地图上，城池只是一座轮廓；踏入其中，农田、市集、寺庙、兵营与州府同时展开。"
+msgstr "What Fate of the Dragon is remembered for is not a unit roster, but the **city within a city**. On the campaign map a city is a silhouette; step inside and farms, markets, temples, barracks and the prefecture hall unfold together."
+
+
+
+
+#: ../../source/user-guide/city.rst:7
+msgid "双层地图"
+msgstr "Two map layers"
+
+
+
+
+#: ../../source/user-guide/city.rst:9
+msgid "同一战区有两类图："
+msgstr "A theater has two kinds of map:"
+
+
+
+
+#: ../../source/user-guide/city.rst:11
+msgid "**城市图**：只在城里建造。雷达通常在左边。"
+msgstr "**City map**: you only build inside the city. The radar is usually on the left."
+
+
+
+
+#: ../../source/user-guide/city.rst:12
+msgid "**战区图**：野外遭遇与攻城。雷达通常在右边。"
+msgstr "**Field map**: encounters and sieges. The radar is usually on the right."
+
+
+
+
+#: ../../source/user-guide/city.rst:14
+msgid "部队可以在图与图之间行军。最多 8 座城出现在同一战区，用底部按钮切换。"
+msgstr "Armies can march between maps. Up to eight cities share a theater; switch with the buttons at the bottom."
+
+
+
+
+#: ../../source/user-guide/city.rst:17
+msgid "经济循环"
+msgstr "Economy loop"
+
+
+
+
+#: ../../source/user-guide/city.rst:19
+msgid "人口依赖治安，税收依赖人口与税率。粮食沿「稻 → 主食 → 军粮 / 体力」走；酒用于城内生命恢复；布是生产链的一支；金钱来自税收与市场买卖。"
+msgstr "Population depends on public order; tax depends on population and the rate. Grain follows rice → staple food → army rations / stamina; wine restores city hit points; cloth is one production branch; coin comes from tax and the market."
+
+
+
+
+#: ../../source/user-guide/city.rst:21
+msgid "民夫从牌楼招募，可并行排队。建筑只能建在城内空地，并消耗资源。部分建筑有前置：例如刀兵营之后才是枪兵营或弓兵营；翰林院升级之后才能建客栈与马厩。"
+msgstr "Peasants are recruited at the archway and can queue in parallel. Buildings only go on empty city tiles and cost resources. Some have prerequisites: swordsman barracks before spear or bow barracks; an upgraded Hanlin Academy before the inn and stables."
+
+
+
+
+#: ../../source/user-guide/city.rst:23
+msgid "市场可以买入和卖出。分工与赈济影响民心和治安。税率过高会伤民心；祭祀可安民，灾荒会逼反。"
+msgstr "The market buys and sells. Labour assignment and relief affect morale and order. High tax hurts morale; rites calm the people; famine can turn them."
+
+
+
+
+#: ../../source/user-guide/city.rst:26 ../../source/user-guide/city.rst:34
+msgid "官职"
+msgstr "Office"
+
+
+
+
+#: ../../source/user-guide/city.rst:28
+msgid "教程里的四个国家官职："
+msgstr "The four state offices from the tutorial:"
+
+
+
+
+#: ../../source/user-guide/city.rst:35
+msgid "作用"
+msgstr "Role"
+
+
+
+
+#: ../../source/user-guide/city.rst:36
+msgid "治安"
+msgstr "Public order"
+
+
+#: ../../source/user-guide/city.rst:37
+msgid "提高治安，进而提高人口与税"
+msgstr "Raise public order, then population and tax"
+
+
+
+
+#: ../../source/user-guide/city.rst:38 ../../source/user-guide/city.rst:48
+msgid "科技"
+msgstr "Technology"
+
+
+
+
+#: ../../source/user-guide/city.rst:39
+msgid "解锁二、三级翰林科技"
+msgstr "Unlock second- and third-tier Hanlin techs"
+
+
+
+
+#: ../../source/user-guide/city.rst:40
+msgid "祭祀"
+msgstr "Rites"
+
+
+#: ../../source/user-guide/city.rst:41
+msgid "国家级祭祀：恢复、增产、减灾"
+msgstr "State rites: recovery, yield, fewer disasters"
+
+
+
+
+#: ../../source/user-guide/city.rst:42
+msgid "政务"
+msgstr "Administration"
+
+
+#: ../../source/user-guide/city.rst:43 ../../source/user-guide/combat.rst:33
+msgid "外交"
+msgstr "Diplomacy"
+
+
+
+
+#: ../../source/user-guide/city.rst:45
+msgid "民间祭祀与官方祭祀是两条指令。天灾作为随机事件存在，祭祀降低其概率。"
+msgstr "Folk rites and official rites are separate commands. Disasters are random events; rites lower their chance."
+
+
+
+
+#: ../../source/user-guide/city.rst:50
+msgid "翰林院不消耗民夫。四个分类加上升级，最多升到三级院。关卡可以锁升级。"
+msgstr "The Hanlin Academy does not consume peasants. Four categories plus an upgrade, up to a tier-3 academy. Scenarios can lock upgrades."
+
+
+
+
+#: ../../source/user-guide/city.rst:52
+msgid "常见解锁规则："
+msgstr "Common unlock rules:"
+
+
+
+
+#: ../../source/user-guide/city.rst:54
+msgid "研究满 4 个一级科技后开放二级"
+msgstr "Research four tier-1 techs to open tier 2"
+
+
+
+
+#: ../../source/user-guide/city.rst:55
+msgid "二级再满 4 个后开放三级"
+msgstr "Four more at tier 2 opens tier 3"
+
+
+
+
+#: ../../source/user-guide/city.rst:56
+msgid "翰林院本身升级是建造客栈等高级建筑的门闩"
+msgstr "Upgrading the academy itself is the gate for the inn and other advanced buildings"
+
+
+
+
+#: ../../source/user-guide/combat.rst:2
+msgid "野外、攻城与巷战"
+msgstr "Field, siege, and streets"
+
+
+
+
+#: ../../source/user-guide/combat.rst:4
+msgid "战事分成三层：郊外野战、城墙攻防、破门之后的巷战。粮道一断，再强的军阵也会溃散。"
+msgstr "War has three layers: open-field battles, wall assault, and street fighting after the gate falls. Cut the grain road and even a famous host dissolves."
+
+
+
+
+#: ../../source/user-guide/combat.rst:7
+msgid "选择与命令"
+msgstr "Selection and orders"
+
+
+
+
+#: ../../source/user-guide/combat.rst:9
+msgid "操作是经典即时战略：左键选择，右键下令，拖框多选。选中民夫时脚下是绿圈，选中建筑是矩形框。"
+msgstr "Controls are classic RTS: left-click select, right-click order, drag a box to multi-select. Selected peasants get a green ring; buildings get a rectangle."
+
+
+
+
+#: ../../source/user-guide/combat.rst:11
+msgid "命令来自一张约 100 个 ID 的动作表，界面只是这些动作的皮肤。高频动作包括：生产、建造、拆除、修理、招募、研究、买卖、上下马、上下船、扎营，以及攻城器械与外交。"
+msgstr "Orders come from an action table of about 100 IDs; the UI is only a skin. Frequent verbs include produce, build, demolish, repair, recruit, research, trade, mount/dismount, board ships, camp, siege engines, and diplomacy."
+
+
+
+
+#: ../../source/user-guide/combat.rst:14
+msgid "兵种"
+msgstr "Units"
+
+
+
+
+#: ../../source/user-guide/combat.rst:16
+msgid "步兵三条线：刀、枪、弓。必须由民夫进入对应兵营训练，并消耗资源。"
+msgstr "Infantry has three lines: sword, spear, bow. Peasants must train in the matching barracks and spend resources."
+
+
+
+
+#: ../../source/user-guide/combat.rst:18
+msgid "骑兵不是单独兵种：步兵或武将右键马匹即可上马。文官和异人不能上马。"
+msgstr "Cavalry is not a separate unit type: infantry or generals right-click a horse to mount. Civil officers and unusual characters cannot mount."
+
+
+
+
+#: ../../source/user-guide/combat.rst:21
+msgid "状态条"
+msgstr "Status bars"
+
+
+
+
+#: ../../source/user-guide/combat.rst:23
+msgid "头顶蓝条是 **体力**。己方城内进食恢复；城外随时间下降。降到 0 后训练度开始掉。体力与训练度都影响攻防。"
+msgstr "The blue bar overhead is **stamina**. It recovers by eating in a friendly city and drops in the field. At 0, training starts to fall. Both stamina and training affect attack and defence."
+
+
+
+
+#: ../../source/user-guide/combat.rst:24
+msgid "脚下绿条是 **生命**。城内用酒恢复。盟友城内可以吃饭回体力，但不能用酒回生命。"
+msgstr "The green bar at the feet is **hit points**. Wine restores them in your city. In an ally city you can eat to recover stamina, but you cannot use wine to restore hit points."
+
+
+
+
+#: ../../source/user-guide/combat.rst:25
+msgid "国家祭祀可立刻恢复体力与生命。"
+msgstr "State rites can restore stamina and hit points immediately."
+
+
+
+
+#: ../../source/user-guide/combat.rst:28
+msgid "器械与水战"
+msgstr "Engines and naval war"
+
+
+
+
+#: ../../source/user-guide/combat.rst:30
+msgid "攻城常用云梯、投石、弩车、霹雳车。水战有草船、楼船、码头停靠与上下船。行营可以扎营、拔营、出营，并把物资运往城市或行营。"
+msgstr "Sieges use ladders, catapults, crossbow carts and thunder carts. Naval war has straw boats, tower ships, docks and boarding. Field camps can be pitched, struck, and sortied, and can ship supplies to a city or camp."
+
+
+
+
+#: ../../source/user-guide/combat.rst:35
+msgid "外交五件套：结盟、解盟、进献或进贡、支援、离间。它们和内政官职、武将忠诚缠在一起，不是独立的“胜利屏幕按钮”。"
+msgstr "Five diplomatic acts: ally, break alliance, tribute, support, and alienate. They tangle with offices and officer loyalty; they are not a separate victory-screen button."
+
+
+
+
+#: ../../source/user-guide/factions.rst:2
+msgid "魏、蜀、吴"
+msgstr "Wei, Shu, Wu"
+
+
+
+
+#: ../../source/user-guide/factions.rst:4
+msgid "184 年黄巾之后，汉廷名存。三位雄主各自写下统一的方法——权谋、仁德，或据江自守。战役结构对应蜀、魏、吴三条线，外加训练关。"
+msgstr "After the Yellow Turbans in 184, the Han court was a name. Three houses wrote three ways to reunify the realm — cunning, virtue, or the river. Campaigns follow Shu, Wei and Wu, plus training scenarios."
+
+
+
+
+#: ../../source/user-guide/factions.rst:7
+msgid "魏"
+msgstr "Wei"
+
+
+
+
+#: ../../source/user-guide/factions.rst:9
+msgid "北地苦寒，铁骑与屯田并重。曹魏以权谋开局：铁矿充足，冶铸先行，瓮城与箭塔把中原变成一座精密的战争机器。"
+msgstr "The north is iron, horse and winter. Wei opens with statecraft: abundant ore, early smelting, barbicans and towers that turn the Central Plains into a precise war engine."
+
+
+
+
+#: ../../source/user-guide/factions.rst:12
+msgid "蜀"
+msgstr "Shu"
+
+
+
+
+#: ../../source/user-guide/factions.rst:14
+msgid "巴蜀四塞，农桑为本。蜀汉靠仁德聚人心、靠山地设伏。火油、拒马与粮产，是一条更慢、也更难被切断的统一之路。"
+msgstr "The basin is walled by mountains, and agriculture is the root. Shu gathers hearts by virtue and fights from the slopes. Fire oil, chevaux-de-frise and grain — a slower road, harder to cut."
+
+
+
+
+#: ../../source/user-guide/factions.rst:17
+msgid "吴"
+msgstr "Wu"
+
+
+
+
+#: ../../source/user-guide/factions.rst:19
+msgid "江东以舟楫立国。港口、连环船与水上箭塔改写了中原那套步骑逻辑——谁控住大江，谁就控住东南的气运。"
+msgstr "Jiangdong is a kingdom of hulls. Ports, chained ships and river towers rewrite the north’s infantry logic — who holds the great river holds the fortune of the southeast."
+
+
+
+
+#: ../../source/user-guide/factions.rst:22
+msgid "选择建议"
+msgstr "Which to pick"
+
+
+
+
+#: ../../source/user-guide/factions.rst:24
+msgid "想先学会内政与屯田：魏"
+msgstr "Learn city economy and military farms first: Wei"
+
+
+
+
+#: ../../source/user-guide/factions.rst:25
+msgid "想打粮道与山地防守：蜀"
+msgstr "Fight grain roads and mountain defence: Shu"
+
+
+
+
+#: ../../source/user-guide/factions.rst:26
+msgid "想学水战与港口节奏：吴"
+msgstr "Learn naval war and port tempo: Wu"
+
+
+
+
+#: ../../source/user-guide/factions.rst:28
+msgid "具体关卡目标以战役脚本为准。OpenFoD 用自研触发器重做剧情，而不是把原作 ``.TSK`` 字节塞进引擎。"
+msgstr "Scenario objectives come from campaign scripts. OpenFoD rebuilds story triggers itself; it does not shove original ``.TSK`` bytes into the engine."
+
+
+
+
+#: ../../source/user-guide/index.rst:2
+msgid "用户使用文档"
+msgstr "User guide"
+
+
+
+
+#: ../../source/user-guide/index.rst:4
+msgid "这里说明 **怎么玩** OpenFoD：安装、城内内政、野外与攻城、武将，以及魏蜀吴三条开局。机制描述以原作公开规格与 OpenFoD 正在重铸的行为为准；具体数值以游戏内数据表为权威。"
+msgstr "This is **how to play** OpenFoD: install, city governance, field battles and sieges, officers, and the three campaigns. Mechanics follow the original’s public spec and the behaviour OpenFoD is recasting; live numbers come from in-game data tables."
+
+
+
+
+#: ../../source/user-guide/index.rst:15
+msgid "OpenFoD 要保留的，不是某条兵种克制，而是两张同时运转的地图：治理一座城，同时注视整片山河。系统繁复，正是三国的气味。"
+msgstr "What OpenFoD keeps is not a single unit counter, but two maps running at once: a city to govern and a realm to watch. The complexity is the smell of the Three Kingdoms."
+
+
+
+
+#: ../../source/user-guide/install.rst:2
+msgid "安装与启动"
+msgstr "Install and launch"
+
+
+
+
+#: ../../source/user-guide/install.rst:5
+msgid "系统需求"
+msgstr "Requirements"
+
+
+
+
+#: ../../source/user-guide/install.rst:7
+msgid "64 位 Windows、Linux 或 macOS"
+msgstr "64-bit Windows, Linux, or macOS"
+
+
+
+
+#: ../../source/user-guide/install.rst:8
+msgid "能运行 Godot 4.7 客户端的显卡与驱动"
+msgstr "A GPU and driver able to run a Godot 4.7 client"
+
+
+
+
+#: ../../source/user-guide/install.rst:9
+msgid "不必安装 DirectX 7 或原作宽屏补丁"
+msgstr "DirectX 7 and original widescreen patches are not required"
+
+
+
+
+#: ../../source/user-guide/install.rst:12
+msgid "获取客户端"
+msgstr "Get the client"
+
+
+
+
+#: ../../source/user-guide/install.rst:14
+msgid "优先使用 GitHub Releases 中的平台包。没有正式包时，从 :doc:`/quickstart` 的开发者步骤自行编译。"
+msgstr "Prefer platform packages from GitHub Releases. If none exist yet, compile with the developer steps in :doc:`/quickstart`."
+
+
+
+
+#: ../../source/user-guide/install.rst:17
+msgid "启动之后"
+msgstr "After launch"
+
+
+
+
+#: ../../source/user-guide/install.rst:19
+msgid "选择语言（中文 / English，与官网、文档站的语言开关独立存储）。"
+msgstr "Choose a language (Chinese / English; stored separately from the website and docs language toggle)."
+
+
+
+
+#: ../../source/user-guide/install.rst:20
+msgid "进入战役、遭遇战或教程。原作有魏、蜀、吴三条战役与新手训练关；OpenFoD 按同等结构重做。"
+msgstr "Enter a campaign, skirmish, or tutorial. The original had Wei, Shu and Wu campaigns plus training; OpenFoD rebuilds the same structure."
+
+
+
+
+#: ../../source/user-guide/install.rst:21
+msgid "同一战区最多 8 座城。底部城市按钮用于在城内图与战区图之间切换。"
+msgstr "A theater holds at most eight cities. The city buttons at the bottom switch between city maps and the field map."
+
+
+
+
+#: ../../source/user-guide/install.rst:24
+msgid "不要做的事"
+msgstr "What not to do"
+
+
+
+
+#: ../../source/user-guide/install.rst:26
+msgid "不要把破解补丁、``ali213.bin`` 或来路不明的 ``sanguo1920.exe`` 当成 OpenFoD 的一部分。"
+msgstr "Do not treat cracks, ``ali213.bin``, or unofficial ``sanguo1920.exe`` patches as part of OpenFoD."
+
+
+
+
+#: ../../source/user-guide/install.rst:27
+msgid "不要把原作 ``Res/``、``Dialog/``、``Scns/`` 提交或上传到任何 OpenFoD 仓库。"
+msgstr "Do not commit or upload original ``Res/``, ``Dialog/``, or ``Scns/`` files to any OpenFoD repository."
+
+
+
+
+#: ../../source/user-guide/install.rst:28
+msgid "分辨率与窗口化由现代客户端处理，不再依赖 2001 年的第三方补丁。"
+msgstr "Resolution and windowing are handled by the modern client; 2001 third-party patches are not required."
+
+
+
+
+#: ../../source/user-guide/officers.rst:2
+msgid "武将与招揽"
+msgstr "Officers and recruitment"
+
+
+
+
+#: ../../source/user-guide/officers.rst:4
+msgid "文官治城，武将破阵。三国的故事不在数值表里，而在人心向背。"
+msgstr "Civil officers run the city; generals break the line. The Three Kingdoms live in hearts, not only in stat sheets."
+
+
+
+
+#: ../../source/user-guide/officers.rst:7
+msgid "客栈"
+msgstr "The inn"
+
+
+
+
+#: ../../source/user-guide/officers.rst:9
+msgid "客栈招募武将，不耗民夫，耗钱。同时最多 3 名待招武将，并定期刷新；门外灯亮表示有人。需要翰林院升过级才能建造客栈。"
+msgstr "The inn recruits officers for coin, not peasants. At most three candidates wait and refresh on a timer; a lit lantern means someone is there. The Hanlin Academy must be upgraded before you can build an inn."
+
+
+
+
+#: ../../source/user-guide/officers.rst:12
+msgid "人物类型"
+msgstr "Character types"
+
+
+
+
+#: ../../source/user-guide/officers.rst:14
+msgid "原作人物表从具名武将开始记录曹操、夏侯惇、吕布、诸葛亮等三百余人，并与民夫、士兵、器械共用同一套实体结构，用类型位区分。三类人物是："
+msgstr "The original table records 300+ named officers from Cao Cao, Xiahou Dun, Lü Bu and Zhuge Liang onward, sharing one entity layout with peasants, soldiers and engines, distinguished by type bits. The three kinds are:"
+
+
+
+
+#: ../../source/user-guide/officers.rst:16
+msgid "**武将**：可上阵、可单挑、可劝降"
+msgstr "**Generals**: field command, duels, and persuasion to defect"
+
+
+
+
+#: ../../source/user-guide/officers.rst:17
+msgid "**文官**：偏重内政"
+msgstr "**Civil officers**: city administration"
+
+
+
+
+#: ../../source/user-guide/officers.rst:18
+msgid "**异人**：特殊角色，不能上马"
+msgstr "**Unusual characters**: special roles, cannot mount"
+
+
+
+
+#: ../../source/user-guide/officers.rst:21
+msgid "忠诚"
+msgstr "Loyalty"
+
+
+
+
+#: ../../source/user-guide/officers.rst:23
+msgid "赐爵、赏赐与宝物维系忠诚。忠诚影响生产与战斗效率。战场上可以单挑，也可以劝降。流失一名核心武将，往往比拆掉一座兵营更伤。"
+msgstr "Titles, gifts and relics hold loyalty. Loyalty affects production and combat. You can duel or persuade defections in the field. Losing a core officer often hurts more than losing a barracks."
+
+
+
+

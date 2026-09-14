@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OpenFoD Docs</title>
+    <link rel="icon" href="zh/_static/favicon.png" />
+    <script>
+      (function () {
+        var saved = "";
+        try {
+          saved = localStorage.getItem("openfod-lang") || "";
+        } catch (error) {}
+        var lang = saved || (navigator.language || "zh");
+        var target = /^en\b/i.test(lang) ? "en/index.html" : "zh/index.html";
+        window.location.replace(target);
+      })();
+    </script>
+    <meta http-equiv="refresh" content="0; url=zh/index.html" />
+  </head>
+  <body>
+    <p><a href="zh/index.html">OpenFoD 文档</a> · <a href="en/index.html">OpenFoD Docs</a></p>
+  </body>
+</html>

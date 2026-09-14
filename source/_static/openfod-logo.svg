@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="OpenFoD">
+  <rect width="64" height="64" rx="10" fill="#17140f"/>
+  <rect x="4" y="4" width="56" height="56" rx="8" fill="none" stroke="#d4b56a" stroke-width="1.5"/>
+  <text x="32" y="30" text-anchor="middle" fill="#f3dc9a" font-family="Georgia, 'Noto Serif SC', serif" font-size="11" font-weight="700">Open</text>
+  <text x="32" y="48" text-anchor="middle" fill="#d4b56a" font-family="Georgia, 'Noto Serif SC', serif" font-size="16" font-weight="700">FoD</text>
+</svg>

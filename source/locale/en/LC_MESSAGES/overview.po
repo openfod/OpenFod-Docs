@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, OpenFoD Community
+# This file is distributed under the same license as the OpenFoD package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenFoD \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-14 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/overview.rst:2
+msgid "项目概览"
+msgstr "Overview"
+
+
+
+
+#: ../../source/overview.rst:4
+msgid "OpenFoD 是社区主导的开源重铸，目标是让 2001 年目标软件奥世工作室的《傲世三国》（海外名 *Fate of the Dragon*）在现代系统上重新可玩。它不是原作的再发行，也不附带商业数据包。"
+msgstr "OpenFoD is a community-led open-source recast. The goal is to make Object Software’s 2001 Fate of the Dragon (傲世三国) playable on modern systems. It is not a rerelease and it does not ship commercial data packs."
+
+
+
+
+#: ../../source/overview.rst:6
+msgid "原作不是红警式的纯兵线对冲，也不走三国志的回合棋盘。玩家同时治理一座城、注视一片山河：税率、民心、农桑与翰林科研在城内运转；出城则是野战、攻城与破门后的巷战。"
+msgstr "The original is not a Red Alert arms race, nor a Romance of the Three Kingdoms board. You govern a city and watch a realm at once: taxes, morale, farming and Hanlin research inside the walls; field battles, sieges and street fighting beyond them."
+
+
+
+
+#: ../../source/overview.rst:8
+msgid "它是第一款在 E3 正式展出的中国游戏，后由 Eidos 以 Fate of the Dragon 之名发行。二十余年后，原作受困于旧系统与分辨率。OpenFoD 要做的，是把这座城重新点亮。"
+msgstr "It was the first Chinese game formally shown at E3, later published by Eidos as Fate of the Dragon. Two decades on, the original strains against modern OS and resolutions. OpenFoD exists to light that city again."
+
+
+
+
+#: ../../source/overview.rst:11
+msgid "当前公开仓库"
+msgstr "Public repositories"
+
+
+
+
+#: ../../source/overview.rst:17
+msgid "仓库"
+msgstr "Repository"
+
+
+
+
+#: ../../source/overview.rst:18
+msgid "职责"
+msgstr "Role"
+
+
+
+
+#: ../../source/overview.rst:19
+msgid "OpenFoD-Godot"
+msgstr "OpenFoD-Godot"
+
+
+#: ../../source/overview.rst:20
+msgid "游戏源码。规则引擎、原作格式解码、Godot 4.7.2 Mono 客户端"
+msgstr "Game source: rules engine, original-format decoders, Godot 4.7.2 Mono client"
+
+
+
+
+#: ../../source/overview.rst:21
+msgid "OpenFod-Docs"
+msgstr "OpenFod-Docs"
+
+
+#: ../../source/overview.rst:22
+msgid "本站源码。Sphinx 文档，编译为静态 HTML"
+msgstr "This site’s source. Sphinx docs compiled to static HTML"
+
+
+
+
+#: ../../source/overview.rst:23
+msgid "OpenFod-Website"
+msgstr "OpenFod-Website"
+
+
+#: ../../source/overview.rst:24
+msgid "官网 https://www.openfod.org ，GitHub Pages 托管"
+msgstr "Website https://www.openfod.org , hosted on GitHub Pages"
+
+
+
+
+#: ../../source/overview.rst:26
+msgid "文档站编译后填充到官网的 ``/docs/`` 路径，中文在 ``/docs/zh/``，英文在 ``/docs/en/``。"
+msgstr "The compiled docs are placed at ``/docs/`` on the website: Chinese at ``/docs/zh/``, English at ``/docs/en/``."
+
+
+
+
+#: ../../source/overview.rst:29
+msgid "重铸原则"
+msgstr "Rewrite principles"
+
+
+
+
+#: ../../source/overview.rst:31
+msgid "游戏源码仓库是一次 **按层提取的重写**，而不是把旧工程修到能过关："
+msgstr "The game repository is a **layered extraction rewrite**, not a repair of the previous project until it barely passes:"
+
+
+
+
+#: ../../source/overview.rst:33
+msgid "**保留** 原作二进制格式知识和手搓的内容数据。这些字节偏移只存在于 2001 年的闭源程序里，没有第二份规格可抄。"
+msgstr "**Keep** original binary format knowledge and hand-curated content. Those byte offsets exist only inside a 2001 closed-source binary; no second specification exists."
+
+
+
+
+#: ../../source/overview.rst:34
+msgid "**保留** 行为测试作为规格。旧工程文档极短，测试才是“游戏到底怎么动”的权威。"
+msgstr "**Keep** behavioural tests as the specification. The previous docs were tiny; the tests are the authority for how the game actually moves."
+
+
+
+
+#: ../../source/overview.rst:35
+msgid "**重写** 规则引擎与 Godot 表现层：一个事实只有一个权威来源，每一条工程规则都由会失败的脚本守门。"
+msgstr "**Rewrite** the rules engine and Godot presentation: one authority per fact, and every engineering rule is a script that can fail."
+
+
+
+
+#: ../../source/overview.rst:38
+msgid "法律与资源"
+msgstr "Legal and assets"
+
+
+
+
+#: ../../source/overview.rst:40
+msgid "本站与游戏仓库都不分发 ``SANGGO.exe``、``Res/*.dll``、战役语音或原版地图。"
+msgstr "Neither this site nor the game repository redistributes ``SANGGO.exe``, ``Res/*.dll``, campaign voice lines, or original maps."
+
+
+
+
+#: ../../source/overview.rst:41
+msgid "开发者若要跑需要原作文件的解码测试，在本机设置 ``FOD_GAME_ROOT``，指向未打包的原版安装目录。"
+msgstr "Developers who need decoder tests that require original files set ``FOD_GAME_ROOT`` on their machine to an unpacked retail install."
+
+
+
+
+#: ../../source/overview.rst:42
+msgid "《傲世三国》与 Fate of the Dragon 为原权利方之商标与作品。OpenFoD 向经典致敬，与目标软件、Overmax Studios、Eidos Interactive 无隶属关系。"
+msgstr "Fate of the Dragon and 傲世三国 are trademarks of their rights holders. OpenFoD is an homage and is not affiliated with Object Software, Overmax Studios, or Eidos Interactive."
+
+
+
+

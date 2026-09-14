@@ -1,0 +1,12 @@
+{# psdocs · page.html — single article page #}
+{% extends "layout.html" %}
+
+{% block body %}
+  {% include "partials/breadcrumb.html" %}
+
+  <article class="ps-article">
+    {{ body }}
+  </article>
+
+  {% include "partials/pager.html" %}
+{% endblock %}

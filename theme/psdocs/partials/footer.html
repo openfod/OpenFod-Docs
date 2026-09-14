@@ -1,0 +1,8 @@
+{# psdocs · partials/footer.html — placed inside main content column #}
+<footer class="ps-footer" role="contentinfo">
+  <span>© {{ copyright }}</span>
+  {%- if theme_repo_url %}
+    <span class="ps-footer__sep">·</span>
+    <a href="{{ theme_repo_url }}" target="_blank" rel="noopener">{{ ps_ui.documentation_source }}</a>
+  {%- endif %}
+</footer>

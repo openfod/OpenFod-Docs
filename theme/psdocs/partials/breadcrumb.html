@@ -1,0 +1,16 @@
+{# psdocs · partials/breadcrumb.html #}
+{%- set section = (breadcrumb_sections|default({})).get(pagename) %}
+{%- set section_duplicates_parent = section and parents and parents[0].title == section.title %}
+{%- if pagename != master_doc and (section or parents) %}
+<nav class="ps-breadcrumb" aria-label="{{ ps_ui.breadcrumb|default('Breadcrumb') }}">
+  <ol>
+    <li><a href="{{ pathto(master_doc) }}">{{ ps_ui.home }}</a></li>
+    {%- if section and not section_duplicates_parent %}
+      <li><span>{{ section.title }}</span></li>
+    {%- endif %}
+    {%- for p in parents %}
+      <li><a href="{{ p.link|e }}">{{ p.title }}</a></li>
+    {%- endfor %}
+  </ol>
+</nav>
+{%- endif %}

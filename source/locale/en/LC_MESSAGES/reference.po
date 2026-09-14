@@ -1,0 +1,300 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, OpenFoD Community
+# This file is distributed under the same license as the OpenFoD package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenFoD \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-14 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/configuration.rst:2
+msgid "环境变量"
+msgstr "Environment variables"
+
+
+
+
+#: ../../source/reference/configuration.rst:5
+msgid "游戏仓库"
+msgstr "Game repository"
+
+
+
+
+#: ../../source/reference/configuration.rst:7
+msgid "下列变量由 OpenFoD-Godot 读取，权威列表在游戏仓库 ``docs/configuration.md``，并由 ``doc_consistency.py`` 守门。"
+msgstr "The following variables are read by OpenFoD-Godot. The authoritative list is ``docs/configuration.md`` in the game repo, gated by ``doc_consistency.py``."
+
+
+
+
+#: ../../source/reference/configuration.rst:13
+#: ../../source/reference/configuration.rst:38
+msgid "变量"
+msgstr "Variable"
+
+
+
+
+#: ../../source/reference/configuration.rst:14
+msgid "默认"
+msgstr "Default"
+
+
+
+
+#: ../../source/reference/configuration.rst:15
+msgid "含义"
+msgstr "Meaning"
+
+
+
+
+#: ../../source/reference/configuration.rst:16
+#: ../../source/reference/glossary.rst:19
+msgid "``FOD_GAME_ROOT``"
+msgstr "``FOD_GAME_ROOT``"
+
+
+#: ../../source/reference/configuration.rst:17
+#: ../../source/reference/configuration.rst:20
+#: ../../source/reference/configuration.rst:23
+msgid "未设置"
+msgstr "unset"
+
+
+
+
+#: ../../source/reference/configuration.rst:18
+msgid "未打包的原版安装目录"
+msgstr "Unpacked original install directory"
+
+
+
+
+#: ../../source/reference/configuration.rst:19
+msgid "``FOD_SKILLTABLE``"
+msgstr "``FOD_SKILLTABLE``"
+
+
+#: ../../source/reference/configuration.rst:21
+msgid "``skilltable.tbl`` 路径"
+msgstr "Path to ``skilltable.tbl``"
+
+
+
+
+#: ../../source/reference/configuration.rst:22
+msgid "``FOD_REFERENCE_ROOT``"
+msgstr "``FOD_REFERENCE_ROOT``"
+
+
+#: ../../source/reference/configuration.rst:24
+msgid "提取来源工程路径，仅开发用"
+msgstr "Path to the project this one was extracted from; development only"
+
+
+
+
+#: ../../source/reference/configuration.rst:25
+msgid "``FOD_IMPORT_MAPS``"
+msgstr "``FOD_IMPORT_MAPS``"
+
+
+#: ../../source/reference/configuration.rst:26
+msgid "有限导入"
+msgstr "limited import"
+
+
+
+
+#: ../../source/reference/configuration.rst:27
+msgid "设为 ``all`` 时导入全部地图"
+msgstr "Set to ``all`` to import every map"
+
+
+
+
+#: ../../source/reference/configuration.rst:30
+msgid "文档与官网"
+msgstr "Docs and website"
+
+
+
+
+#: ../../source/reference/configuration.rst:32
+msgid "文档仓库 **不提交** 大模型参数。本地预览 Ask AI 可以使用 ``LLM_*`` 或 ``AI_QA_*``。生产环境只在 OpenFod-Website 的 GitHub Pages Environment 里配置："
+msgstr "The docs repository **does not commit** LLM parameters. Local Ask AI preview may use ``LLM_*`` or ``AI_QA_*``. Production values live only in the OpenFod-Website GitHub Pages Environment:"
+
+
+
+
+#: ../../source/reference/configuration.rst:39
+msgid "用途"
+msgstr "Purpose"
+
+
+
+
+#: ../../source/reference/configuration.rst:40
+msgid "``LLM_BASE_URL``"
+msgstr "``LLM_BASE_URL``"
+
+
+#: ../../source/reference/configuration.rst:41
+msgid "OpenAI 兼容接口根地址"
+msgstr "Root URL of an OpenAI-compatible API"
+
+
+
+
+#: ../../source/reference/configuration.rst:42
+msgid "``LLM_APIKEY``"
+msgstr "``LLM_APIKEY``"
+
+
+#: ../../source/reference/configuration.rst:43
+msgid "接口密钥"
+msgstr "API key"
+
+
+
+
+#: ../../source/reference/configuration.rst:44
+msgid "``LLM_MODEL``"
+msgstr "``LLM_MODEL``"
+
+
+#: ../../source/reference/configuration.rst:45
+msgid "模型名"
+msgstr "Model name"
+
+
+
+
+#: ../../source/reference/configuration.rst:47
+msgid "本地文档预览还可以使用 ``AI_INDEX_DIR``、``AI_QA_PORT``、``AI_QA_DOCS_URL_PREFIX``。不要把这些值写进游戏仓库。"
+msgstr "Local docs preview may also use ``AI_INDEX_DIR``, ``AI_QA_PORT``, and ``AI_QA_DOCS_URL_PREFIX``. Do not write these into the game repository."
+
+
+
+
+#: ../../source/reference/glossary.rst:2
+msgid "名词表"
+msgstr "Glossary"
+
+
+
+
+#: ../../source/reference/glossary.rst:4
+msgid "OpenFoD"
+msgstr "OpenFoD"
+
+
+#: ../../source/reference/glossary.rst:5
+msgid "开源重铸项目，以及 Godot 客户端所在的游戏仓库。"
+msgstr "The open-source recast, and the game repository that holds the Godot client."
+
+
+
+
+#: ../../source/reference/glossary.rst:7
+msgid "《傲世三国》 / Fate of the Dragon"
+msgstr "Fate of the Dragon / 傲世三国"
+
+
+#: ../../source/reference/glossary.rst:8
+msgid "2001 年原作。OpenFoD 不发行其商业数据。"
+msgstr "The 2001 original. OpenFoD does not redistribute its commercial data."
+
+
+
+
+#: ../../source/reference/glossary.rst:10
+msgid "城中之城"
+msgstr "City within a city"
+
+
+
+
+#: ../../source/reference/glossary.rst:11
+msgid "战略图上的城与城内经营图叠在同一战区里的设计。"
+msgstr "A city on the campaign map stacked with its interior economy map in the same theater."
+
+
+
+
+#: ../../source/reference/glossary.rst:13
+msgid "翰林院"
+msgstr "Hanlin Academy"
+
+
+
+
+#: ../../source/reference/glossary.rst:14
+msgid "科技建筑。升级后解锁更高级建筑与二、三级科技。"
+msgstr "The technology building. Upgrades unlock advanced buildings and tier-2 / tier-3 techs."
+
+
+
+
+#: ../../source/reference/glossary.rst:16
+msgid "Parity"
+msgstr "Parity"
+
+
+#: ../../source/reference/glossary.rst:17
+msgid "用同一份场景脚本分别驱动新旧引擎，并对比 transcript 的对照方法。"
+msgstr "The method of driving old and new engines with the same scenario script and comparing transcripts."
+
+
+
+
+#: ../../source/reference/glossary.rst:20
+msgid "指向本机原版安装目录的环境变量，只用于开发与解码测试。"
+msgstr "Environment variable pointing at a local original install, used only for development and decoder tests."
+
+
+
+
+#: ../../source/reference/glossary.rst:22
+msgid "psdocs"
+msgstr "psdocs"
+
+
+#: ../../source/reference/glossary.rst:23
+msgid "本站使用的 Sphinx 主题名（布局来自 GitHub Docs 风格的参考实现）。品牌文案已改为 OpenFoD。"
+msgstr "The Sphinx theme name used by this site (layout from a GitHub Docs-style reference implementation). Branding copy is OpenFoD."
+
+
+
+
+#: ../../source/reference/index.rst:2
+msgid "参考资料"
+msgstr "Reference"
+
+
+
+
+#: ../../source/reference/index.rst:4
+msgid "名词表、环境变量和版本记录。"
+msgstr "Glossary, environment variables, and the changelog."
+
+
+
+
+#~ msgid "``FOD_REFERENCE_ROOT`` | 未设置"
+#~ msgstr ""
+

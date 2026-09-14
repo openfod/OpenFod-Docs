@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, OpenFoD Community
+# This file is distributed under the same license as the OpenFoD package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenFoD \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-14 16:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/index.rst:40
+msgid "开始使用"
+msgstr "Get started"
+
+
+
+
+
+#: ../../source/index.rst:24 ../../source/index.rst:48
+msgid "用户使用文档"
+msgstr "User guide"
+
+
+
+
+
+#: ../../source/index.rst:30 ../../source/index.rst:55
+msgid "开发者文档"
+msgstr "Developer guide"
+
+
+
+
+
+#: ../../source/index.rst:62
+msgid "参考资料"
+msgstr "Reference"
+
+
+
+
+
+#: ../../source/index.rst:2
+msgid "OpenFoD 项目文档"
+msgstr "OpenFoD Documentation"
+
+
+
+
+
+#: ../../source/index.rst:4
+msgid "欢迎阅读 OpenFoD 项目文档。OpenFoD 是开源重铸的《傲世三国》（Fate of the Dragon）：用现代引擎把城内内政、武将招揽与三层战事重新做可玩、可改、可传。"
+msgstr "Welcome to the OpenFoD docs. OpenFoD is an open-source recast of Fate of the Dragon (傲世三国): city governance, officer recruitment, and three combat layers rebuilt for modern engines so the game can be played, forked, and passed on."
+
+
+
+
+
+#: ../../source/index.rst:6
+msgid "本站分成两部分：面向玩家的 **用户使用文档**，以及面向贡献者的 **开发者文档**。编译产物会发布到 `https://www.openfod.org/docs/`。"
+msgstr "This site has two halves: a **user guide** for players, and a **developer guide** for contributors. The compiled site is published at `https://www.openfod.org/docs/`."
+
+
+
+
+
+#: ../../source/index.rst:12
+msgid "项目概览"
+msgstr "Overview"
+
+
+
+
+
+#: ../../source/index.rst:16
+msgid "OpenFoD 是什么、和 2001 年原作的关系，以及当前仓库怎么分工。"
+msgstr "What OpenFoD is, how it relates to the 2001 original, and how the repositories are split."
+
+
+
+
+
+#: ../../source/index.rst:18
+msgid "快速开始"
+msgstr "Quickstart"
+
+
+
+
+
+#: ../../source/index.rst:22
+msgid "玩家如何取得可运行构建，开发者如何在本地拉起 Godot 客户端。"
+msgstr "How players get a runnable build, and how developers launch the Godot client locally."
+
+
+
+
+
+#: ../../source/index.rst:28
+msgid "安装、城内内政、野外作战、武将招揽，以及魏蜀吴三条开局。"
+msgstr "Install, city governance, field battles, officers, and the Wei / Shu / Wu campaigns."
+
+
+
+
+
+#: ../../source/index.rst:34
+msgid "引擎分层、工程门禁、parity 对照，以及文档站如何自动发布到官网。"
+msgstr "Engine layers, engineering gates, the parity oracle, and how docs publish to the website."
+
+
+
+
+
+#: ../../source/index.rst:38
+msgid "原作商业数据不会随 OpenFoD 分发。拥有正版《傲世三国》/ Fate of the Dragon 资源的开发者，可以用环境变量指向本地安装，供格式解码与对照测试使用。"
+msgstr "Original commercial data does not ship with OpenFoD. Developers who own a legitimate Fate of the Dragon install can point environment variables at it for format decoders and parity tests."
+
+
+
+
+

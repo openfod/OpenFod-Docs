@@ -1,0 +1,68 @@
+{# psdocs · layout.html — overall HTML skeleton #}
+<!DOCTYPE html>
+<html lang="{{ ps_current_language.html_lang|default('zh-CN') }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+  {{ metatags }}
+
+  {#- Stylesheets registered via theme.conf + html_css_files #}
+  {%- for css in css_files %}
+    {%- if css|attr("filename") %}
+      <link rel="stylesheet" type="text/css" href="{{ pathto(css.filename, 1) }}?v={{ asset_version }}" />
+    {%- else %}
+      <link rel="stylesheet" type="text/css" href="{{ pathto(css, 1) }}?v={{ asset_version }}" />
+    {%- endif %}
+  {%- endfor %}
+
+  {%- if favicon_url %}
+    <link rel="icon" href="{{ favicon_url }}">
+  {%- endif %}
+
+  {%- block extrahead %}{%- endblock %}
+
+  {#- Restore banner-dismissed state before paint #}
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('ps-banner-dismissed') === '1') {
+          document.documentElement.dataset.bannerHidden = '1';
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  {% include "partials/banner.html" %}
+  {% include "partials/header.html" %}
+
+  <div class="ps-layout">
+    <aside class="ps-sidebar" aria-label="{{ ps_ui.sidebar }}">
+      <div class="ps-sidebar__inner">
+        {% include "partials/sidebar.html" %}
+      </div>
+    </aside>
+
+    <main class="ps-main" id="main" role="main">
+      {% block body %}{% endblock %}
+      {% include "partials/footer.html" %}
+    </main>
+
+    <aside class="ps-toc" aria-label="{{ ps_ui.page_toc }}">
+      {% include "partials/toc.html" %}
+    </aside>
+  </div>
+
+  {#- JS files registered via html_js_files + Sphinx core #}
+  {%- block scripts %}
+    {%- for js in script_files %}
+      {%- if js|attr("filename") %}
+        <script src="{{ pathto(js.filename, 1) }}?v={{ asset_version }}"></script>
+      {%- else %}
+        <script src="{{ pathto(js, 1) }}?v={{ asset_version }}"></script>
+      {%- endif %}
+    {%- endfor %}
+  {%- endblock %}
+</body>
+</html>

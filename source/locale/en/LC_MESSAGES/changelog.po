@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, OpenFoD Community
+# This file is distributed under the same license as the OpenFoD package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenFoD \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-14 16:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelog.rst:2
+msgid "更新记录"
+msgstr "Changelog"
+
+
+
+
+
+#: ../../source/changelog.rst:5
+msgid "0.1.0"
+msgstr "0.1.0"
+
+
+#: ../../source/changelog.rst:7
+msgid "建立 OpenFod-Docs：用户使用文档与开发者文档。"
+msgstr "Created OpenFod-Docs with a user guide and a developer guide."
+
+
+
+
+
+#: ../../source/changelog.rst:8
+msgid "采用 Sphinx + 自研 GitHub Docs 风格主题，输出中英双语静态站。"
+msgstr "Sphinx plus an in-repo GitHub Docs-style theme, emitting a zh/en static site."
+
+
+
+
+
+#: ../../source/changelog.rst:9
+msgid "文档编译产物发布到 ``https://www.openfod.org/docs/``，由 OpenFod-Website 的 GitHub Pages 流水线组装。"
+msgstr "Compiled docs publish to ``https://www.openfod.org/docs/``, assembled by the OpenFod-Website GitHub Pages pipeline."
+
+
+
+
+
+#: ../../source/changelog.rst:10
+msgid "不提供 Docker / GHCR 部署路径。"
+msgstr "No Docker / GHCR deployment path."
+
+
+
+
+

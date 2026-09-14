@@ -1,0 +1,10 @@
+{
+  "enabled": false,
+  "base_url": "",
+  "api_key": "",
+  "model": "",
+  "thinking": { "type": "disabled" },
+  "docs_url_prefix": "/docs",
+  "max_context_chars": 5200,
+  "source_excerpt_chars": 1200
+}

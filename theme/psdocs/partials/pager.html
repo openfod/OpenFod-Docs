@@ -1,0 +1,21 @@
+{# psdocs · partials/pager.html — prev / next cards #}
+{%- if prev or next %}
+<nav class="ps-pager" aria-label="{{ ps_ui.prev_next }}">
+  {%- if prev %}
+    <a class="ps-pager__card" data-dir="prev" href="{{ prev.link|e }}">
+      <span class="ps-pager__label">{{ ps_ui.previous }}</span>
+      <span class="ps-pager__title">{{ prev.title }}</span>
+    </a>
+  {%- else %}
+    <span class="ps-pager__placeholder" aria-hidden="true"></span>
+  {%- endif %}
+  {%- if next %}
+    <a class="ps-pager__card ps-pager__card--next" data-dir="next" href="{{ next.link|e }}">
+      <span class="ps-pager__label">{{ ps_ui.next }}</span>
+      <span class="ps-pager__title">{{ next.title }}</span>
+    </a>
+  {%- else %}
+    <span class="ps-pager__placeholder" aria-hidden="true"></span>
+  {%- endif %}
+</nav>
+{%- endif %}

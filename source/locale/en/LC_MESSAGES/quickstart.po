@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, OpenFoD Community
+# This file is distributed under the same license as the OpenFoD package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenFoD \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-14 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/quickstart.rst:2
+msgid "快速开始"
+msgstr "Quickstart"
+
+
+
+
+#: ../../source/quickstart.rst:4
+msgid "按你的身份选一条最短路径。玩家走发布包；要改代码则走开发者环境。"
+msgstr "Pick the shortest path for your role. Players use a release build; people changing code use the developer environment."
+
+
+
+
+#: ../../source/quickstart.rst:7
+msgid "玩家：运行游戏"
+msgstr "Players: run the game"
+
+
+
+
+#: ../../source/quickstart.rst:9
+msgid "打开 `OpenFoD 组织主页 <https://github.com/openfod>`_ ，进入游戏仓库的 Releases。"
+msgstr "Open the `OpenFoD GitHub org <https://github.com/openfod>`_ and go to Releases on the game repository."
+
+
+
+
+#: ../../source/quickstart.rst:10
+msgid "下载当前平台的构建（Windows / Linux / macOS，以实际发布为准）。"
+msgstr "Download the build for your platform (Windows / Linux / macOS, according to what is actually published)."
+
+
+
+
+#: ../../source/quickstart.rst:11
+msgid "解压后启动客户端。不需要安装 2001 年原作也能进入社区内容与调试场景。"
+msgstr "Unzip and launch the client. You do not need the 2001 original to enter community content and debug scenes."
+
+
+
+
+#: ../../source/quickstart.rst:12
+msgid "若你拥有正版原作资源，并想对照经典数据，把未打包的安装目录告诉开发者文档中的 ``FOD_GAME_ROOT`` ——普通游玩不必设置。"
+msgstr "If you own legitimate original assets and want classic data for comparison, point ``FOD_GAME_ROOT`` from the developer docs at the unpacked install — ordinary play does not need it."
+
+
+
+
+#: ../../source/quickstart.rst:14
+msgid "当前重铸仍在进行中。没有 Release 时，请使用下面的开发者步骤从源码运行，或关注官网 `www.openfod.org <https://www.openfod.org/>`_ 的发布说明。"
+msgstr "The recast is still in progress. If there is no Release yet, run from source with the developer steps below, or watch `www.openfod.org <https://www.openfod.org/>`_ for announcements."
+
+
+
+
+#: ../../source/quickstart.rst:17
+msgid "开发者：从源码运行"
+msgstr "Developers: run from source"
+
+
+
+
+#: ../../source/quickstart.rst:19
+msgid "在 ``OpenFoD-Godot`` 仓库根目录："
+msgstr "At the root of the ``OpenFoD-Godot`` repository:"
+
+
+
+
+#: ../../source/quickstart.rst:30
+msgid "客户端还需要："
+msgstr "The client also needs:"
+
+
+
+
+#: ../../source/quickstart.rst:32
+#, fuzzy
+msgid "Godot **4.7.2 Mono** (不要用 4.5.1)"
+msgstr "Godot **4.7.2 Mono** (not 4.5.1)"
+
+
+
+
+#: ../../source/quickstart.rst:33
+msgid "由 ``scripts/dev/mount-classic.ps1`` 创建的开发 junction"
+msgstr "The development junction created by ``scripts/dev/mount-classic.ps1``"
+
+
+
+
+#: ../../source/quickstart.rst:35
+msgid "Windows 上请用 ``py`` 启动 Python，避免微软商店占位的 ``python`` 命令。"
+msgstr "On Windows, launch Python with ``py`` so you do not hit the Microsoft Store stub named ``python``."
+
+
+
+
+#: ../../source/quickstart.rst:38
+msgid "下一步"
+msgstr "Next steps"
+
+
+
+
+#: ../../source/quickstart.rst:40
+msgid "玩家继续阅读 :doc:`user-guide/index`。"
+msgstr "Players continue with :doc:`user-guide/index`."
+
+
+
+
+#: ../../source/quickstart.rst:41
+msgid "开发者继续阅读 :doc:`developer/setup`。"
+msgstr "Developers continue with :doc:`developer/setup`."
+
+
+
+

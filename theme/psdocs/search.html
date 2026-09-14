@@ -1,0 +1,46 @@
+{# psdocs · search.html — standalone search page with header-style search control #}
+{%- extends "layout.html" %}
+{% set title = _('Search') %}
+
+{%- block scripts %}
+  {{ super() }}
+  <script src="{{ pathto('_static/searchtools.js', 1) }}"></script>
+  <script src="{{ pathto('_static/language_data.js', 1) }}"></script>
+{%- endblock %}
+
+{% block extrahead %}
+  <script src="{{ pathto('searchindex.js', 1) }}" defer="defer"></script>
+  <meta name="robots" content="noindex" />
+  {{ super() }}
+{% endblock %}
+
+{% block body %}
+  <h1 id="search-documentation">{{ _('Search') }}</h1>
+
+  <noscript>
+    <div class="admonition warning">
+      <p>{{ _('Please activate JavaScript to enable the search\n    functionality.') }}</p>
+    </div>
+  </noscript>
+
+  <p>{{ _('Searching for multiple words only shows matches that contain\n    all words.') }}</p>
+
+  <form class="ps-search ps-search--page" action="" method="get" role="search">
+    <svg class="octicon ps-search__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+      <path fill="currentColor" d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.75.75 0 1 1-1.06 1.06l-3.04-3.04ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"/>
+    </svg>
+    <input type="search"
+           class="ps-search__input"
+           name="q"
+           aria-labelledby="search-documentation"
+           value=""
+           autocomplete="off"
+           autocorrect="off"
+           autocapitalize="off"
+           spellcheck="false" />
+    <span class="ps-search__kbd">Enter</span>
+  </form>
+  <span id="search-progress" class="ps-search__progress" aria-live="polite"></span>
+
+  <div id="search-results"></div>
+{% endblock %}

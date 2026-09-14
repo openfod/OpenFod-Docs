@@ -1,0 +1,15 @@
+.venv/
+build/
+dist/
+source/locale/**/LC_MESSAGES/*.mo
+__pycache__/
+.env
+.env.*
+!.env.example
+*.py[cod]
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+Thumbs.db

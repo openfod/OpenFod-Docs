@@ -1,0 +1,12 @@
+{# psdocs · partials/banner.html — top translation banner #}
+{%- if theme_banner_text %}
+<div class="ps-banner" role="status" data-ps-banner>
+  <span class="ps-banner__text">
+    {{ theme_banner_text }}
+    {%- if theme_banner_link_url and theme_banner_link_label %}
+      <a class="ps-banner__link" href="{{ theme_banner_link_url }}">{{ theme_banner_link_label }}</a>
+    {%- endif %}
+  </span>
+  <button class="ps-banner__close" type="button" aria-label="关闭提示" data-ps-banner-close>×</button>
+</div>
+{%- endif %}

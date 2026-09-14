@@ -1,0 +1,749 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, OpenFoD Community
+# This file is distributed under the same license as the OpenFoD package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenFoD \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-14 16:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/developer/architecture.rst:2
+msgid "架构"
+msgstr "Architecture"
+
+
+
+#: ../../source/developer/architecture.rst:4
+msgid "OpenFoD-Godot 按层切开，依赖只允许单向流动。"
+msgstr "OpenFoD-Godot is cut into layers. Dependencies flow one way only."
+
+
+
+#: ../../source/developer/architecture.rst:21
+msgid "为什么要重写"
+msgstr "Why rewrite"
+
+
+
+#: ../../source/developer/architecture.rst:23
+msgid "旧工程能玩，但 ``Theater``、``GameSession`` 变成了上帝类，数十个常量在 C# 与 JSON 之间手抄。OpenFoD 的选择是：**格式知识与行为测试留下，规则与客户端重写**。"
+msgstr "The previous project plays, but ``Theater`` and ``GameSession`` became god classes, with dozens of constants hand-copied between C# and JSON. OpenFoD’s choice: **keep format knowledge and behavioural tests; rewrite rules and the client**."
+
+
+
+#: ../../source/developer/architecture.rst:25
+msgid "三条架构决策："
+msgstr "Three architecture decisions:"
+
+
+
+#: ../../source/developer/architecture.rst:27
+#, fuzzy
+msgid "**按层提取重写** (ADR 0001)：解码器不可再考古一遍，所以原样迁移后再清理；规则层推倒重做。"
+msgstr "**Rewrite by extraction** (ADR 0001): decoders cannot be re-archaeologised, so they are moved then cleaned; the rules layer is rebuilt."
+
+
+
+#: ../../source/developer/architecture.rst:28
+#, fuzzy
+msgid "**门禁先于游戏代码** (ADR 0002)：没有脚本守门的句子，不叫规则。"
+msgstr "**Gates before game code** (ADR 0002): a sentence without a failing script is not a rule."
+
+
+
+#: ../../source/developer/architecture.rst:29
+#, fuzzy
+msgid "**一个事实一个权威** (ADR 0003)：数值在 ``classic/data``，运行时代码不得再藏一份副本，也不得写死开发者本机路径。"
+msgstr "**One authority per fact** (ADR 0003): numbers live in ``classic/data``. Runtime code must not hide a second copy, and must not bake in a developer’s machine path."
+
+
+
+#: ../../source/developer/architecture.rst:32
+msgid "Engine 的禁区"
+msgstr "Engine forbidden zone"
+
+
+
+#: ../../source/developer/architecture.rst:34
+msgid "``scripts/checks/architecture.py`` 会失败，如果 Engine 出现："
+msgstr "``scripts/checks/architecture.py`` fails if Engine contains:"
+
+
+
+#: ../../source/developer/architecture.rst:36
+msgid "Godot API"
+msgstr "Godot APIs"
+
+
+
+#: ../../source/developer/architecture.rst:37
+msgid "文件 IO"
+msgstr "File IO"
+
+
+
+#: ../../source/developer/architecture.rst:38
+msgid "读取环境变量"
+msgstr "Environment variable reads"
+
+
+
+#: ../../source/developer/architecture.rst:39
+msgid "JSON"
+msgstr "JSON"
+
+
+#: ../../source/developer/architecture.rst:40
+msgid "数据文件路径"
+msgstr "Data file paths"
+
+
+
+#: ../../source/developer/architecture.rst:41
+msgid "精灵 ID"
+msgstr "Sprite ids"
+
+
+
+#: ../../source/developer/architecture.rst:43
+msgid "表现属于 ``client/``，磁盘格式属于 ``classic/``，规则属于 ``engine/``。"
+msgstr "Presentation belongs in ``client/``, on-disk formats in ``classic/``, rules in ``engine/``."
+
+
+
+#: ../../source/developer/contributing.rst:2
+msgid "贡献约定"
+msgstr "Contributing"
+
+
+
+#: ../../source/developer/contributing.rst:4
+msgid "先让门禁红，再让代码绿。旧工程把规则写在散文里，三天内就被违反，包括它自己写明的两条。因此：**没有脚本检查的规则，不是规则。**"
+msgstr "Make the gates able to go red before the code goes green. The previous project wrote rules in prose and violated them within three days, including two it stated explicitly. Therefore: **a rule that no script checks is not a rule.**"
+
+
+
+#: ../../source/developer/contributing.rst:7
+msgid "门禁"
+msgstr "Gates"
+
+
+
+#: ../../source/developer/contributing.rst:13
+msgid "规则"
+msgstr "Rule"
+
+
+
+#: ../../source/developer/contributing.rst:14
+msgid "脚本"
+msgstr "Script"
+
+
+
+#: ../../source/developer/contributing.rst:15
+msgid "UTF-8、无 BOM、LF"
+msgstr "UTF-8, no BOM, LF"
+
+
+
+#: ../../source/developer/contributing.rst:16
+msgid "``encoding.py``"
+msgstr "``encoding.py``"
+
+
+#: ../../source/developer/contributing.rst:17
+msgid "已发布代码不含开发者绝对路径"
+msgstr "No developer absolute paths in shipped code"
+
+
+
+#: ../../source/developer/contributing.rst:18
+msgid "``no_hardcoded_paths.py``"
+msgstr "``no_hardcoded_paths.py``"
+
+
+#: ../../source/developer/contributing.rst:19
+msgid "Engine 不含 Godot / IO / 环境变量"
+msgstr "Engine has no Godot / IO / environment reads"
+
+
+
+#: ../../source/developer/contributing.rst:20
+msgid "``architecture.py``"
+msgstr "``architecture.py``"
+
+
+#: ../../source/developer/contributing.rst:21
+msgid "禁止可变 ``static`` 状态"
+msgstr "No mutable ``static`` state"
+
+
+
+#: ../../source/developer/contributing.rst:22
+msgid "``architecture.py`` + ``CA2211``"
+msgstr "``architecture.py`` + ``CA2211``"
+
+
+#: ../../source/developer/contributing.rst:23
+msgid "文件体积只许下调"
+msgstr "File sizes only ratchet down"
+
+
+
+#: ../../source/developer/contributing.rst:24
+msgid "``architecture.py`` + 预算表"
+msgstr "``architecture.py`` + size budget"
+
+
+#: ../../source/developer/contributing.rst:25
+msgid "环境变量必须被文档列出"
+msgstr "Environment variables must be documented"
+
+
+
+#: ../../source/developer/contributing.rst:26
+#: ../../source/developer/contributing.rst:28
+msgid "``doc_consistency.py``"
+msgstr "``doc_consistency.py``"
+
+
+#: ../../source/developer/contributing.rst:27
+msgid "没有 CI 就不得声称有 CI"
+msgstr "Do not claim CI unless CI exists"
+
+
+
+#: ../../source/developer/contributing.rst:30
+msgid "豁免是计数且可审查的。预算只许降低，不许抬高。"
+msgstr "Exemptions are counted and reviewable. Budgets may only fall, never rise."
+
+
+
+#: ../../source/developer/contributing.rst:33
+msgid "提交前"
+msgstr "Before you commit"
+
+
+
+#: ../../source/developer/contributing.rst:35
+msgid "``dotnet test OpenFoD.sln``"
+msgstr "``dotnet test OpenFoD.sln``"
+
+
+#: ../../source/developer/contributing.rst:36
+msgid "跑完 ``scripts/checks/``"
+msgstr "Run all of ``scripts/checks/``"
+
+
+
+#: ../../source/developer/contributing.rst:37
+#, fuzzy
+msgid "新的环境变量先写进游戏仓库的 ``docs/configuration.md``，再写读取代码"
+msgstr "Document a new environment variable in the game repo ``docs/configuration.md`` before any code reads it"
+
+
+
+#: ../../source/developer/contributing.rst:38
+msgid "不要把原作二进制、MP3、地图放进 git"
+msgstr "Do not put original binaries, MP3s, or maps in git"
+
+
+
+#: ../../source/developer/contributing.rst:39
+msgid "不要在 OpenFoD-Godot 或 OpenFod-Docs 里提交大模型地址、密钥、模型名"
+msgstr "Do not commit LLM base URLs, API keys, or model names in OpenFoD-Godot or OpenFod-Docs"
+
+
+
+#: ../../source/developer/contributing.rst:42
+msgid "文档贡献"
+msgstr "Docs contributions"
+
+
+
+#: ../../source/developer/contributing.rst:44
+msgid "文档源码在本仓库 ``source/``。中文写在 rst 里；英文通过 gettext 的 ``source/locale/en/`` 维护。改完中文后运行 ``make gettext``（Windows 用 ``make.bat gettext``），再检查英文翻译。"
+msgstr "Docs source is ``source/`` in this repository. Chinese is written in rst; English is maintained via gettext in ``source/locale/en/``. After changing Chinese, run ``make gettext`` (``make.bat gettext`` on Windows) and review translations."
+
+
+
+#: ../../source/developer/contributing.rst:46
+msgid "架构决策记录（ADR）在游戏仓库 ``docs/decisions/``：只追加，不改写已接受的记录。被取代的条目加一行 ``Status: superseded by NNNN``，正文保留。"
+msgstr "Architecture decision records live in the game repo ``docs/decisions/``: append-only after acceptance. A superseded record gets ``Status: superseded by NNNN`` and keeps its body."
+
+
+
+#: ../../source/developer/docs-pipeline.rst:2
+msgid "文档站与发布流水线"
+msgstr "Docs site and publish pipeline"
+
+
+
+#: ../../source/developer/docs-pipeline.rst:4
+msgid "OpenFod-Docs 参考 ProteinSeek Workbench Docs 的 **Sphinx + 自研主题 + 中英双语 + Ask AI** 设计，但 **不使用 Docker / GHCR / Nginx**。静态 HTML 由 OpenFod-Website 的 GitHub Pages 工作流拉取并放到 ``/docs/``。"
+msgstr "OpenFod-Docs follows ProteinSeek Workbench Docs for **Sphinx + an in-repo theme + zh/en + Ask AI**, but **does not use Docker / GHCR / Nginx**. Static HTML is pulled by OpenFod-Website’s GitHub Pages workflow and placed at ``/docs/``."
+
+
+
+#: ../../source/developer/docs-pipeline.rst:7
+msgid "本地预览"
+msgstr "Local preview"
+
+
+
+#: ../../source/developer/docs-pipeline.rst:16
+msgid "打开 ``build/html/zh/index.html`` 或 ``build/html/en/index.html``。"
+msgstr "Open ``build/html/zh/index.html`` or ``build/html/en/index.html``."
+
+
+
+#: ../../source/developer/docs-pipeline.rst:18
+msgid "可选：本地 Ask AI 走 Node 服务（只用于本机，密钥不要提交）："
+msgstr "Optional: local Ask AI via the Node service (machine-local only; do not commit secrets):"
+
+
+
+#: ../../source/developer/docs-pipeline.rst:28
+msgid "生产环境禁止把上述三个值写入 OpenFod-Docs 或 OpenFoD-Godot。官网构建使用 OpenFod-Website 工作流的 Environment secrets：``LLM_BASE_URL``、``LLM_APIKEY``、``LLM_MODEL``。"
+msgstr "Do not write those three values into OpenFod-Docs or OpenFoD-Godot for production. The website build reads Environment secrets on OpenFod-Website: ``LLM_BASE_URL``, ``LLM_APIKEY``, ``LLM_MODEL``."
+
+
+
+#: ../../source/developer/docs-pipeline.rst:30
+msgid "GitHub Pages 上没有常驻 Node 进程。Ask AI 会先尝试同源 ``/docs/api/ai-qa/chat``；若不可用，则回退到已经随站点发布的静态检索索引（``/docs/ai/index/``）。构建阶段若存在上述密钥，还可以生成 FAQ 缓存，改善静态回答。"
+msgstr "GitHub Pages has no standing Node process. Ask AI first tries same-origin ``/docs/api/ai-qa/chat``; if that is unavailable it falls back to the static retrieval index shipped with the site (``/docs/ai/index/``). When the secrets exist at build time, a FAQ cache can also be generated to improve static answers."
+
+
+
+#: ../../source/developer/docs-pipeline.rst:33
+msgid "分支与自动发布"
+msgstr "Branches and automatic publish"
+
+
+
+#: ../../source/developer/docs-pipeline.rst:35
+msgid "在 ``OpenFod-Docs`` 的 ``develop`` 写文档、跑 ``make html``。"
+msgstr "Write docs on ``OpenFod-Docs`` ``develop`` and run ``make html``."
+
+
+
+#: ../../source/developer/docs-pipeline.rst:36
+msgid "合并到 ``OpenFod-Docs`` 的 ``main``。"
+msgstr "Merge into ``OpenFod-Docs`` ``main``."
+
+
+
+#: ../../source/developer/docs-pipeline.rst:37
+msgid "``main`` 上的 ``trigger-website`` 工作流调用 ``OpenFod-Website`` 的 Pages 工作流。"
+msgstr "The ``trigger-website`` workflow on ``main`` dispatches the OpenFod-Website Pages workflow."
+
+
+
+#: ../../source/developer/docs-pipeline.rst:38
+msgid "Website 在 ``main`` 构建时检出 Docs 的 ``main``，执行 ``make html``，把 ``build/html`` 复制到 ``dist/docs/``，再发布 GitHub Pages。"
+msgstr "When Website ``main`` builds, it checks out Docs ``main``, runs ``make html``, copies ``build/html`` into ``dist/docs/``, then publishes GitHub Pages."
+
+
+
+#: ../../source/developer/docs-pipeline.rst:40
+msgid "``OpenFod-Website`` 的 ``develop`` 同样会检出 Docs 的 ``develop`` 做集成构建，但 **不会** 发布 Pages。官网只在 Website 的 ``main`` 更新。"
+msgstr "``OpenFod-Website`` ``develop`` also checks out Docs ``develop`` for an integration build, but **does not** publish Pages. The public site updates only from Website ``main``."
+
+
+
+#: ../../source/developer/docs-pipeline.rst:42
+msgid "跨仓触发需要在 OpenFod-Docs 配置 secret ``WEBSITE_DISPATCH_TOKEN``（能够 ``workflow_dispatch`` ``openfod/OpenFod-Website`` 的 token）。Website 仓库本身读取 LLM 密钥，Docs 仓库不保存这些密钥。"
+msgstr "Cross-repo dispatch needs secret ``WEBSITE_DISPATCH_TOKEN`` on OpenFod-Docs (a token that can ``workflow_dispatch`` ``openfod/OpenFod-Website``). The Website repository reads LLM secrets; the Docs repository does not store them."
+
+
+
+#: ../../source/developer/formats.rst:2
+msgid "原作格式与离线工具"
+msgstr "Original formats and offline tools"
+
+
+
+#: ../../source/developer/formats.rst:4
+msgid "原作安装不是单一资源包，而是小引擎加散落数据再加巨型资源 DLL。OpenFoD **读取规格、不提交原作文件**。"
+msgstr "The original install is not one asset pack: a small engine, scattered data, and huge resource DLLs. OpenFoD **reads the spec and does not commit original files**."
+
+
+
+#: ../../source/developer/formats.rst:7
+msgid "本地安装长什么样"
+msgstr "What a local install looks like"
+
+
+
+#: ../../source/developer/formats.rst:13
+msgid "路径"
+msgstr "Path"
+
+
+
+#: ../../source/developer/formats.rst:14
+msgid "角色"
+msgstr "Role"
+
+
+
+#: ../../source/developer/formats.rst:15
+msgid "``SANGGO.exe``"
+msgstr "``SANGGO.exe``"
+
+
+#: ../../source/developer/formats.rst:16
+msgid "原版主程序"
+msgstr "Original main executable"
+
+
+
+#: ../../source/developer/formats.rst:17
+msgid "``Res/res00.dll`` 等"
+msgstr "``Res/res00.dll`` and siblings"
+
+
+#: ../../source/developer/formats.rst:18
+msgid "PE 外壳的 RCDATA 图集"
+msgstr "PE-wrapped RCDATA atlases"
+
+
+
+#: ../../source/developer/formats.rst:19
+msgid "``Res/Bei*.lib`` 等"
+msgstr "``Res/Bei*.lib`` and siblings"
+
+
+#: ../../source/developer/formats.rst:20
+msgid "北 / 南地形与单位精灵库"
+msgstr "North / south terrain and unit sprite libraries"
+
+
+
+#: ../../source/developer/formats.rst:21
+msgid "``Data/``"
+msgstr "``Data/``"
+
+
+#: ../../source/developer/formats.rst:22
+msgid "字体、科技、武将表、音效索引"
+msgstr "Fonts, techs, officer tables, sound indexes"
+
+
+
+#: ../../source/developer/formats.rst:23
+msgid "``Scns/``"
+msgstr "``Scns/``"
+
+
+#: ../../source/developer/formats.rst:24
+msgid "``.map`` + ``.scn`` + ``.int``"
+msgstr "``.map`` + ``.scn`` + ``.int``"
+
+
+#: ../../source/developer/formats.rst:25
+msgid "``Levs/``"
+msgstr "``Levs/``"
+
+
+#: ../../source/developer/formats.rst:26
+msgid "关卡 ``.TSK`` + ``.int`` + ``.dmo``"
+msgstr "Scenario ``.TSK`` + ``.int`` + ``.dmo``"
+
+
+#: ../../source/developer/formats.rst:28
+msgid "部分已钉死、可用 fixture 回归的不变量："
+msgstr "Invariants already nailed down and regression-tested with fixtures:"
+
+
+
+#: ../../source/developer/formats.rst:30
+msgid "所有 ``.scn`` 长 1132 字节"
+msgstr "Every ``.scn`` is 1132 bytes"
+
+
+
+#: ../../source/developer/formats.rst:31
+msgid "``.map`` 大小 ``550 + width * height * 8``"
+msgstr "``.map`` size is ``550 + width * height * 8``"
+
+
+
+#: ../../source/developer/formats.rst:32
+msgid "``Storyman.tbl`` 为 393 条 × 3318 字节"
+msgstr "``Storyman.tbl`` is 393 records × 3318 bytes"
+
+
+
+#: ../../source/developer/formats.rst:33
+msgid "``Science.inx`` 为 28 项科技"
+msgstr "``Science.inx`` holds 28 technologies"
+
+
+
+#: ../../source/developer/formats.rst:36
+msgid "离线脚本"
+msgstr "Offline scripts"
+
+
+
+#: ../../source/developer/formats.rst:38
+msgid "``tools/`` 下是 Python 考古脚本，只描述磁盘布局，不把受版权保护的美术或音频拷进仓库。"
+msgstr "``tools/`` holds Python archaeology scripts. They describe on-disk layout and do not copy copyrighted art or audio into the repo."
+
+
+
+#: ../../source/developer/formats.rst:45
+msgid "默认产物写在各脚本自己的 ``out/``。完整分析笔记在游戏仓库 ``docs/analysis/``。"
+msgstr "Default outputs land in each script’s ``out/``. Full analysis notes live in the game repo ``docs/analysis/``."
+
+
+
+#: ../../source/developer/index.rst:2
+msgid "开发者文档"
+msgstr "Developer guide"
+
+
+
+#: ../../source/developer/index.rst:4
+msgid "面向要改 OpenFoD 的人：仓库怎么分层、本地怎么搭、门禁脚本为什么必须先绿，以及文档如何发布到官网。"
+msgstr "For people changing OpenFoD: how the repo is layered, how to set up locally, why gate scripts must go green first, and how docs publish to the website."
+
+
+
+#: ../../source/developer/index.rst:6
+msgid "游戏源码在 `OpenFoD-Godot <https://github.com/openfod>`_ 。本文只描述公开约定；实现细节以该仓库当前代码与 ``docs/`` 为准。"
+msgstr "Game source lives in `OpenFoD-Godot <https://github.com/openfod>`_. This guide describes public contracts; implementation details follow that repository’s current code and ``docs/``."
+
+
+
+#: ../../source/developer/parity.rst:2
+msgid "Parity 对照"
+msgstr "Parity oracle"
+
+
+
+#: ../../source/developer/parity.rst:4
+msgid "规则层正在重写。旧工程保持可运行，是唯一完整的行为对照，所以它是 oracle。两套引擎不能链进同一个测试进程——类型同名会碰撞——而且旧测试套件编译的是旧接口。重写一旦开始，那些测试就不再能当规格。"
+msgstr "The rules layer is being rewritten. The previous project stays runnable and is the only complete behavioural reference, so it is the oracle. The two engines cannot be linked into one test process — type names collide — and the old suite compiles against old interfaces. Once the rewrite starts, those tests cannot act as the spec."
+
+
+
+#: ../../source/developer/parity.rst:6
+msgid "做法（ADR 0005）：**不要链接两套引擎。分开驱动，对比 transcript。**"
+msgstr "The method (ADR 0005): **do not link the engines. Drive them separately and compare transcripts.**"
+
+
+
+#: ../../source/developer/parity.rst:15
+msgid "约定"
+msgstr "Contracts"
+
+
+
+#: ../../source/developer/parity.rst:17
+msgid "**场景是数据不是代码。** JSON 描述地图、刷兵、带时间戳的命令和要跑多久。场景里不出现 C# 类型名，这样架构重写不会毁掉规格。"
+msgstr "**A scenario is data, not code.** JSON describes maps, spawns, tick-stamped commands and how long to run. No C# type names appear, so an architectural rewrite does not destroy the spec."
+
+
+
+#: ../../source/developer/parity.rst:18
+msgid "**Transcript 是规范投影。** 每个观察到的 tick 一条记录，单位按 id 排序，字段顺序固定，LF 换行，无时间戳。同一引擎跑两次必须字节级一致，否则 oracle 是噪声。"
+msgstr "**A transcript is a canonical projection.** One record per observed tick, units sorted by id, fixed field order, LF line endings, no timestamps. Two runs of the same engine must be byte-identical, or the oracle is noise."
+
+
+
+#: ../../source/developer/parity.rst:19
+msgid "**Diff 必须写明容忍项。** 差异要么报出来，要么列出容忍理由。被容忍的差异是记录在案的分叉。"
+msgstr "**A diff must name what it tolerates.** Differences are reported or listed with a reason. A tolerated difference is a recorded divergence."
+
+
+
+#: ../../source/developer/parity.rst:20
+msgid "两个 runner 只共享场景模型和 transcript 模型。"
+msgstr "The two runners share the scenario and transcript model and nothing else."
+
+
+
+#: ../../source/developer/parity.rst:22
+msgid "``parity/`` 是过渡目录。等价性成立之后应当删除，而不是永远堆着两套世界。"
+msgstr "``parity/`` is transitional. Delete it once equivalence is established; do not keep two worlds forever."
+
+
+
+#: ../../source/developer/setup.rst:2
+msgid "开发环境"
+msgstr "Development setup"
+
+
+
+#: ../../source/developer/setup.rst:5
+msgid "工具链"
+msgstr "Toolchain"
+
+
+
+#: ../../source/developer/setup.rst:7
+msgid ".NET SDK（能构建 ``OpenFoD.sln``）"
+msgstr ".NET SDK able to build ``OpenFoD.sln``"
+
+
+
+#: ../../source/developer/setup.rst:8
+msgid "Godot **4.7.2 Mono**，不要使用 4.5.1"
+msgstr "Godot **4.7.2 Mono**, not 4.5.1"
+
+
+
+#: ../../source/developer/setup.rst:9
+msgid "Python 3.10+，Windows 用 ``py`` 启动"
+msgstr "Python 3.10+, launched with ``py`` on Windows"
+
+
+
+#: ../../source/developer/setup.rst:10
+msgid "Git，工作分支约定见下方"
+msgstr "Git; branch conventions below"
+
+
+
+#: ../../source/developer/setup.rst:13
+msgid "克隆与构建"
+msgstr "Clone and build"
+
+
+
+#: ../../source/developer/setup.rst:23
+msgid "然后跑门禁："
+msgstr "Then run the gates:"
+
+
+
+#: ../../source/developer/setup.rst:32
+msgid "客户端额外需要 ``scripts/dev/mount-classic.ps1`` 建立的开发 junction。"
+msgstr "The client additionally needs the development junction from ``scripts/dev/mount-classic.ps1``."
+
+
+
+#: ../../source/developer/setup.rst:35
+msgid "原作文件（可选）"
+msgstr "Original files (optional)"
+
+
+
+#: ../../source/developer/setup.rst:37
+msgid "原作资源留在开发者本机，永不提交。测试若需要它们，会显式 skip，并带 ``RequiresOriginal`` 特征，因此“全绿”不会悄悄表示“其实没跑”。"
+msgstr "Original assets stay on the developer’s machine and are never committed. Tests that need them skip explicitly and carry the ``RequiresOriginal`` trait, so “green” never quietly means “did not run”."
+
+
+
+#: ../../source/developer/setup.rst:39
+msgid "常用变量："
+msgstr "Common variables:"
+
+
+
+#: ../../source/developer/setup.rst:45
+msgid "变量"
+msgstr "Variable"
+
+
+
+#: ../../source/developer/setup.rst:46
+msgid "含义"
+msgstr "Meaning"
+
+
+
+#: ../../source/developer/setup.rst:47
+msgid "``FOD_GAME_ROOT``"
+msgstr "``FOD_GAME_ROOT``"
+
+
+#: ../../source/developer/setup.rst:48
+#, fuzzy
+msgid "未打包的原版安装目录，含 Scns 与 Data"
+msgstr "Unpacked original install, containing Scns and Data"
+
+
+
+#: ../../source/developer/setup.rst:49
+msgid "``FOD_SKILLTABLE``"
+msgstr "``FOD_SKILLTABLE``"
+
+
+#: ../../source/developer/setup.rst:50
+#, fuzzy
+msgid "skilltable.tbl 的显式路径"
+msgstr "Explicit path to skilltable.tbl"
+
+
+
+#: ../../source/developer/setup.rst:51
+msgid "``FOD_IMPORT_MAPS``"
+msgstr "``FOD_IMPORT_MAPS``"
+
+
+#: ../../source/developer/setup.rst:52
+#, fuzzy
+msgid "设为 all 时导入全部 map（默认只导入少量）"
+msgstr "Set to all to import every map (default imports a small set)"
+
+
+
+#: ../../source/developer/setup.rst:54
+#, fuzzy
+msgid "完整列表见 :doc:`/reference/configuration` 。本机 Python 工具还可以写 gitignore 的 tools/local.json。"
+msgstr "The full list is in :doc:`/reference/configuration`. Local Python tools may also use gitignored tools/local.json."
+
+
+
+#: ../../source/developer/setup.rst:57
+msgid "分支"
+msgstr "Branches"
+
+
+
+#: ../../source/developer/setup.rst:59
+msgid "``OpenFoD-Godot``、``OpenFod-Docs``、``OpenFod-Website`` 都持久保留 ``develop``。"
+msgstr "``OpenFoD-Godot``, ``OpenFod-Docs``, and ``OpenFod-Website`` all keep a lasting ``develop`` branch."
+
+
+
+#: ../../source/developer/setup.rst:61
+msgid "日常开发在 ``develop``"
+msgstr "Day-to-day work happens on ``develop``"
+
+
+
+#: ../../source/developer/setup.rst:62
+msgid "需要发布时再合并到 ``main``"
+msgstr "Merge to ``main`` when you intend to publish"
+
+
+
+#: ../../source/developer/setup.rst:63
+msgid "``OpenFod-Website`` 的 GitHub Pages 只监听 ``main``"
+msgstr "OpenFod-Website GitHub Pages listens only to ``main``"
+
+
+
+#~ msgid "Engine 不含 Godot / IO / 环境变量 | ``architecture.py``"
+#~ msgstr ""
+
+#~ msgid "``FOD_IMPORT_MAPS`` | 设为 ``all`` 时导入全部 ``.map``（默认只导入少量）"
+#~ msgstr ""
+
