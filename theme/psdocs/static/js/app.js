@@ -570,7 +570,7 @@
       setNotice("loading");
       var language = aiSearch.getAttribute("data-ps-language") || "zh";
       var controller = typeof AbortController === "function" ? new AbortController() : null;
-      var timeoutId = controller ? window.setTimeout(function () { controller.abort(); }, 4000) : null;
+      var timeoutId = controller ? window.setTimeout(function () { controller.abort(); }, 30000) : null;
       fetch(apiUrl(), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
